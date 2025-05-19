@@ -21,7 +21,22 @@ class carrousel {
     this.options = Object.asign({}, {
       slidesToScroll: 1,
       slidesVisible: 1
-    })
+    }, options);
+    let root = this.createDivWithClass('carrousel');
+    let container = this.createDivWithClass('carrousel__container');
+    root.appendChild(container);
+    this.element.appendChild(root);
+  }
+
+  /**
+   * 
+   * @param {string} className 
+   * @returns (HTMLElement)
+   */
+  createDivWithClass(className) {
+    let div = document.createElement('div');
+    div.setAttribute('class', className);
+    return div
   }
 }
 
