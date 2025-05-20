@@ -22,10 +22,15 @@ class carrousel {
       slidesToScroll: 1,
       slidesVisible: 1
     }, options);
+    this.children = [].slice.call(element.children);
     let root = this.createDivWithClass('carrousel');
     let container = this.createDivWithClass('carrousel__container');
     root.appendChild(container);
     this.element.appendChild(root);
+    this.children.forEach(function (child) {
+      this.createDivWithClass('carrousel__item');
+      container.appendChild(child);
+    }).bind()
   }
 
   /**
