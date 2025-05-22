@@ -3,3 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#scroll {
+  display: flex;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.slide {
+  scroll-snap-align: center;
+}
+
+.slide img {
+  width: 100vw;
+}
