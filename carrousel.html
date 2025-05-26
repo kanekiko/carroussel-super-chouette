@@ -1,15 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
+  <title>Super chouette</title>
+  <link rel="stylesheet" href="css/carrousel.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrousel</title>
+  <script src="./js/carrousel.js" async></script>
 </head>
 
 <body>
+  <header>
+    <nav>
+      <div class="logo-nav"></div>
+    </nav>
+  </header>
   <main>
+    <div id="carousel-container">
+      <div id="scroll">
+        <div class="slide" id="slide1"><img src="img/1.jpg" alt="slide 1"></div>
+        <div class="slide" id="slide2"><img src="img/2.jpg" alt="slide 2"></div>
+        <div class="slide" id="slide3"><img src="img/3.jpg" alt="slide 3"></div>
+        <div class="slide" id="slide4"><img src="img/4.jpg" alt="slide 4"></div>
+      </div>
 
+      <div id="carousel-button">
+        <button id="carousel-left"><img src="css/left.svg" alt="carousel left button"></button>
+        <button id="carousel-right"><img src="css/right.svg" alt="carousel rigth button"></button>
+      </div>
+    </div>
   </main>
 </body>
 
